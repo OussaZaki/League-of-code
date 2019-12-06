@@ -1,0 +1,92 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/** Header Section **/
+.header {
+  text-align: center;
+  background-color: #17120f;
+  min-height: 36vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+.logo {
+  height: 10vmin;
+}
+
+.title {
+  font-size: calc(6px + 2vmin);
+  margin-top: 1.6em;
+  margin-bottom: 0;
+}
+
+.subtitle {
+  font-size: calc(6px + 1vmin);
+  margin-top: 0.4em;
+  margin-bottom: 0;
+}
+
+.content {
+  margin-top: 2em;
+}
+
+.link {
+  color: #09d3ac;
+}
+
+.link:hover {
+  color: #09d3ac;
+  text-decoration: underline;
+}
+
+/** Leagues Section **/
+.error {
+  margin-top: 6vh !important;
+}
+
+.loader {
+  width: 100%;
+  margin-top: 18vh !important;
+}
+
+.leagues {
+  margin: 0 auto;
+  width: 80vw;
+  padding-top: 36vh;
+}
+
+.division-title {
+  margin-top: 1.6em;
+  margin-bottom: 1em;
+  text-align: left;
+}
+
+.division-message {
+  text-align: left;
+  color: #8c8c8c;
+}
+
+.form-title {
+  margin-bottom: 0;
+}
+
+.form-subtitle {
+  margin-bottom: 1.6em;
+}
+
+.green {
+  color: #09d3ac;
+}
