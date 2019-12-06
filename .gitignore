@@ -1,0 +1,45 @@
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# testing
+/coverage
+
+# production
+/build
+/lib
+
+## Compiled JavaScript files
+**/*.js.map
+
+# Typescript v1 declaration files
+typings/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Firebase
+**/.firebase/
+*-firebase-adminsdk-*.json
+firebase-debug.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# dotenv environment variables file
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# misc
+.DS_Store
