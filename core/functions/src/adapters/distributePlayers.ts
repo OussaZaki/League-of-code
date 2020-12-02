@@ -7,6 +7,8 @@ export const distributePlayers = (players: Player[]) => {
   const sorted_players = players.sort(comparePlayers);
 
   sorted_players.reduce(ranker, league);
+
+  // @ts-ignore
   delete league.config;
 
   return league as League;

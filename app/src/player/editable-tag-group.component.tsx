@@ -12,7 +12,7 @@ type Props = {
   onChange?: (tagList: string[]) => void;
 };
 
-const EditableTagsRef: React.FC<Props> = ({ value = [], onChange}, _ref) => {
+const EditableTagsRef: React.ForwardRefRenderFunction<unknown, Props> = ({ value = [], onChange}, _ref) => {
   let inputRef = createRef<Input>();
   const [tags, setTags] = useState(value);
 

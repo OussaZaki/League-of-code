@@ -8,11 +8,11 @@ export const Header: React.FC = () => {
       <p className="title">
         Klarna's internal <strong>Advent Of Code</strong> leaderboard.
       </p>
-      <p className="subtitle">y.2019 | Dec 1st - Dec 25th</p>
+      <p className="subtitle">y.2020 | Dec 1st - Dec 25th</p>
       <p className="content">
         <a
           className="link"
-          href="https://adventofcode.com/2019/leaderboard/private"
+          href="https://adventofcode.com/2020/leaderboard/private"
           target="_blank"
           rel="noopener noreferrer"
         >

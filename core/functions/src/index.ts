@@ -43,19 +43,20 @@ export const player = functions.https.onRequest(
 );
 
 export const league = functions.https.onRequest(
-  async (_request: Request, response: Response) => {
-    const { db: database } = bootstrap();
-    response.set('Access-Control-Allow-Origin', '*');
-    response.set('Access-Control-Allow-Methods', 'GET, OPTIONS');
-    try {
-      const leagueData = await getLeague(database);
+  async (request: Request, response: Response) =>
+    corsHandler(request, response, async () => {
+      const { db: database } = bootstrap();
+      response.set('Access-Control-Allow-Origin', '*');
+      response.set('Access-Control-Allow-Methods', 'GET, OPTIONS');
+      try {
+        const leagueData = await getLeague(database);
 
-      response.status(200);
-      response.json(leagueData);
-    } catch (error) {
-      response.status(500);
-      console.error(error);
-      response.send(error);
-    }
-  }
+        response.status(200);
+        response.json(leagueData);
+      } catch (error) {
+        response.status(500);
+        console.error(error);
+        response.send(error);
+      }
+    })
 );
