@@ -28,7 +28,7 @@ export const ProfileFormBase: React.FC<Props> = ({
         return;
       }
 
-      handleOk({ id: player.id, ...values });
+      handleOk({ ...values, id: values.id || player.id });
     });
   };
   return (
