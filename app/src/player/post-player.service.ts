@@ -1,7 +1,7 @@
 import { PlayerProfile } from "./player.model";
 
 const PROFILE_URL = process.env.NODE_ENV === 'production'
-  ? 'https://us-central1-oussa-io.cloudfunctions.net/league'
+  ? 'https://us-central1-oussa-io.cloudfunctions.net/player'
   : 'http://localhost:5000/oussa-io/us-central1/player';
 
 export const postPlayer = async (player: PlayerProfile) => {
