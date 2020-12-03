@@ -53,7 +53,7 @@ export const ProfileFormBase: React.FC<Props> = ({
             initialValue: player.github
           })(<Input />)}
         </Form.Item>
-        <Form.Item label="Klarna's Domain">
+        <Form.Item label="Klarna's Domain (or ex-Klarnaut)">
           {getFieldDecorator('domain', {
             initialValue: player.domain
           })(<Input />)}
